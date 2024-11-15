@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+
+RewriteRule ^(.*)$ public/$1.php
+RewriteRule ^home$ public/home.php
+RewriteRule ^contact$ public/contact.php
+RewriteRule ^info$ public/info.php
+
+ErrorDocument 404 /public/core/404.php

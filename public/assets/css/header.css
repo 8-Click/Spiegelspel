@@ -1,0 +1,17 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw;
+    background: white;
+}
+
+.navLinks {
+    display: flex;
+    gap: 2em;
+}
+
+.logoContainer img {
+    max-width: 90%;
+    height: auto;
+}
