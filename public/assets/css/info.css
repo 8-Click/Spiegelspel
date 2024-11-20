@@ -58,7 +58,7 @@
     font-family: 'BambooGothic', sans-serif;
 }
 
-#videoImage, .foto {
+#videoImage, .foto, .image {
     width: 100%;
     height: auto;
 }
@@ -71,4 +71,43 @@ h1 {
 
 p {
     padding: 3vh 0;
+}
+
+.instructionContainer {
+    background-color: #819FCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.leftColumn, .rightColumn {
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 1.2763rem + 0.7648vw, 2.5rem);
+    margin: 5vh auto 10vh auto;
+    font-family: 'BambooGothic', sans-serif;
+}
+
+.initialBox {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.paragraph {
+    font-size: clamp(0.9rem, 0.8329rem + 0.2294vw, 1.2rem);
+    font-family: 'BambooGothic', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 5vh;
+}
+
+.image {
+    margin-bottom: 5vh;
 }
