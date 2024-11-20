@@ -1,0 +1,56 @@
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 10vw;
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vh;
+}
+
+.fotoContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.videoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video p {
+    margin: 0 auto;
+    font-size: clamp(1rem, 0.8881rem + 0.3824vw, 1.5rem);
+}
+
+.fotoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fotoBox p {
+    margin: 0 auto;
+    font-size: clamp(1rem, 0.8881rem + 0.3824vw, 1.5rem);
+}
+
+#videoImage, .foto {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: clamp(1rem, 0.7763rem + 0.7648vw, 2rem);
+}
