@@ -7,3 +7,63 @@ Description: Een zelfgemaakt WordPress thema voor het Spiegelspel.
 Version: 1.0
 */
 
+@font-face {
+    font-family: 'Bodoni MT';
+    src: url('../fonts/Font/bodoni-mt-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BambooGothic';
+    src: url('../fonts/Font/bamboo-gothic/bamboo-gothic.ttf') format('truetype');
+}
+
+.homeContainer {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundImage {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #6581AC, rgba(255, 255, 255, 0)), url('assets/img/bg_home.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items:center;
+    display: flex;
+}
+
+h1,h2 {
+    color: white;
+}
+
+h1 {
+    font-family: 'Bodoni MT', sans-serif;
+    font-size: 6rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+    font-family: 'BambooGothic', sans-serif;
+    font-size: 3rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+}
+
+.textBox{
+    margin-left: 20vw;
+}

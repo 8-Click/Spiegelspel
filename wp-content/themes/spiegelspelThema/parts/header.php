@@ -1,3 +1,8 @@
+<nav>
+    <?php wp_nav_menu(array('theme_location' => 'hoofdmenu')); ?>
+</nav>
+
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -9,7 +14,6 @@
 <body>
     <header>
     
-        <h1><?php bloginfo('name'); ?></h1>
-        <p><?php bloginfo('description'); ?></p>
+>
     </header>
 

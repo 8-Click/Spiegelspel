@@ -1,20 +1,14 @@
 
-<?php get_header(); ?>
-
-    <div id="content">
-        <?php
-        if ( have_posts() ) :
-            while ( have_posts() ) : the_post();
-                ?>
-                <h2><?php the_title(); ?></h2>
-                <div><?php the_content(); ?></div>
-                <?php
-            endwhile;
-        else :
-            echo '<p>Geen berichten gevonden.</p>';
-        endif;
-        ?>
+<?php include "parts/header.php" ?>
+<div class="homeContainer">
+        <div class="backgroundImage">
+            <div class="textBox">
+                <h1>SPIEGELSPEL</h1>
+                <h2>FOCUS6</h2>
+            </div>
+        </div>
     </div>
+    
     <?php get_footer(); ?>
     <?php include "parts/footer.php"?>
 
