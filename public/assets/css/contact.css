@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Bodoni MT';
+    src: url('../fonts/Font/bodoni-mt-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BambooGothic';
+    src: url('../fonts/Font/bamboo-gothic/bamboo-gothic.ttf') format('truetype');
+}
+
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #F1F1F1;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contactForm {
+    margin-top: 0;
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 100%;
+}
+
+.contactForm label {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: BambooGothic, sans-serif;
+}
+
+.contactForm input {
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #6581AC;
+    background: transparent;
+    outline: none;
+    padding: 2vh 0;
+    font-family: BambooGothic, sans-serif;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contactForm input:focus {
+    border: 1px solid #6581AC;
+    padding: 8px;
+    border-radius: 4px;
+    background: #F1F1F1;
+}
+
+.textBox {
+    color: #6581AC;
+    font-size: clamp(2rem, 1.8881rem + 0.3824vw, 2.5rem);
+    font-family: BambooGothic, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+

@@ -3,7 +3,7 @@ include_once("core/html.php");
 ?>
 <link rel="stylesheet" href="<?= BASEURL_PUBLIC ?>assets/css/info.css"><?php
   include_once("core/header.php"); ?>
-<div class="parentContainer">
+<div class="parentContainer" style="background-color: #F1F1F1">
     <div class="infoContainer">
         <div class="videoContainer">
             <div class="video">
