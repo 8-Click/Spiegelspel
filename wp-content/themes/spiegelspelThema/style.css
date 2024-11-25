@@ -1,0 +1,223 @@
+/*
+Theme Name: spiegelspelThema
+Theme URI: http://voorbeeld.com/
+Author: Marijn Willems
+Author URI: http://voorbeeld.com/
+Description: Een zelfgemaakt WordPress thema voor het Spiegelspel.
+Version: 1.0
+*/
+
+@font-face {
+  font-family: "Bodoni MT";
+  src: url("fonts/Font/bodoni-mt-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BambooGothic";
+  src: url("fonts/Font/bamboo-gothic/BambooGothic-Book.ttf") format("truetype");
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10vw;
+  background: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-size: clamp(1rem, 0.8881rem + 0.3824vw, 1.5rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.logoContainer img {
+  max-width: 90%;
+  height: auto;
+}
+
+.homeContainer {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundImage {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #6581ac, rgba(255, 255, 255, 0)),
+    url("assets/img/bg_home.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+}
+
+.h1_index {
+  font-family: "Bodoni MT", sans-serif;
+  font-size: 6rem;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: white;
+}
+
+.h2_index {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: normal;
+  color: white;
+}
+
+.textBox {
+  margin-left: 20vw;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 10vw;
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10vh;
+  gap: 2rem;
+}
+
+.fotoContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.videoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.videoText p {
+  font-size: clamp(1rem, 0.8881rem + 0.3824vw, 1.5rem);
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video p {
+  margin: 0 auto;
+  font-size: clamp(1rem, 0.8881rem + 0.3824vw, 1.5rem);
+}
+
+.fotoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fotoBox p {
+  margin: 0 auto;
+  font-size: clamp(1rem, 0.8881rem + 0.3824vw, 1.5rem);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#videoImage,
+.foto,
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.h1_info {
+  font-size: clamp(1.5rem, 1.2763rem + 0.7648vw, 2.5rem);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 200;
+}
+
+.containerText {
+  padding: 3vh 0;
+}
+
+.instructionContainer {
+  background-color: #819fcc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding-top: 4vw;
+}
+
+.leftColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+}
+
+.h2_info {
+  font-size: clamp(1.5rem, 1.2763rem + 0.7648vw, 2.5rem);
+  margin: 5vh auto 10vh auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.initialBox {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+p {
+  font-size: clamp(0.9rem, 0.8329rem + 0.2294vw, 1.2rem);
+  line-height: 1.6;
+  margin-bottom: 1.5vh;
+  margin-top:0px;
+ 
+}
+
+.image {
+  margin-bottom: 5vh;
+}
+
+.titleSpiegel{
+
+}
