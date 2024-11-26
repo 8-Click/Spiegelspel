@@ -9,7 +9,7 @@
         </div>
     </div>
     
-    <?php get_footer(); ?>
+    
     <?php include "parts/footer.php"?>
 
    
