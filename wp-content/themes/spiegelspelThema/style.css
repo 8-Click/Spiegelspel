@@ -179,8 +179,6 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-
-
 .instructionContainer {
   background-color: #819fcc;
   display: flex;
@@ -189,7 +187,7 @@ body {
   width: 100%;
   height: auto;
   align-items: center;
- 
+  padding-bottom: 10vh;
 }
 
 .leftColumn,
@@ -214,12 +212,10 @@ body {
 .paragraph {
   font-size: clamp(0.9rem, 0.8329rem + 0.2294vw, 1.2rem);
   line-height: 1.6;
-  margin-top:2vh;
- 
+  margin-top: 2vh;
 }
 
 .image {
-  
   width: 35vw;
 }
 
@@ -228,10 +224,36 @@ body {
   width: 35vw;
 }
 
-
-.titleSpiegel{
+.titleSpiegel {
   font-size: clamp(1.5rem, 1.2763rem + 0.7648vw, 2.5rem);
   margin: 18vh auto 10vh auto;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.footerContainer {
+  display: flex;
+  background-color: #6581ac;
+  min-height: 20vh;
+  padding: 10vh 7.5vw 0 10vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerP {
+  font-size: clamp(0.8rem, 0.6881rem + 0.3824vw, 1.3rem);
+  color: white;
+  font-family: "Franklin Gothic ", Arial, sans-serif;
+  display: flex;
+  margin: 1vh;
+}
+
+.socialText {
+  flex-direction: column;
+  display: flex;
+}
+
+#icon {
+  min-width: 5vw;
+  height: auto;
 }
 
