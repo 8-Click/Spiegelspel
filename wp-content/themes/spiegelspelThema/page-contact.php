@@ -1,7 +1,7 @@
 <?php include "parts/header.php" ?>
 
-<div class="contactContainer">
-    <div class="textBox">CONTACT</div>
+<div class="contactHomeContainer">
+    <div class="contactTextBox">CONTACT</div>
     <div class="contactForm">
         <form action="#">
             <label for="firstName">Voornaam</label>

@@ -12,10 +12,6 @@ Version: 1.0
   src: url("fonts/Font/bodoni-mt-regular.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "BambooGothic";
-  src: url("fonts/Font/bamboo-gothic/BambooGothic-Book.ttf") format("truetype");
-}
 
 body {
   font-family: Arial, sans-serif;
@@ -218,61 +214,54 @@ p {
   margin-bottom: 5vh;
 }
 
-/* .titleSpiegel{
+.titleSpiegel{
 
-} */
-
-@font-face {
-  font-family: 'Bodoni MT';
-  src: url('../fonts/Font/bodoni-mt-regular.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'BambooGothic';
-  src: url('../fonts/Font/bamboo-gothic/bamboo-gothic.ttf') format('truetype');
-}
-
-.homeContainer {
+.contactHomeContainer {
   display: flex;
   flex-direction: row;
   background-color: #F1F1F1;
   justify-content: center;
   min-height: 100vh;
+  position: relative;
 }
 
 .contactForm {
-  margin-top: 0;
-  width: 30vw;
-  height: 80vh;
+  margin: 25vh 0 0 15vw;
+  width: 40vw;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   background-color: white;
   justify-content: center;
   align-items: center;
-  padding: 20px; 
   box-sizing: border-box;
+  position: absolute;
 }
 
 .contactForm form {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   max-width: 100%;
+  align-items: center;
 }
 
 .contactForm label {
-  width: 100%;
-  box-sizing: border-box;
+  margin-top: 5vh;
+  width: 80%; 
+  text-align: left;
   font-family: BambooGothic, sans-serif;
 }
 
 .contactForm input {
   border: none;
-  width: 100%;
+  width: 80%; 
   border-bottom: 2px solid #6581AC;
   background: transparent;
   outline: none;
-  padding: 2vh 0;
+  margin-bottom: 15px;
   font-family: BambooGothic, sans-serif;
   transition: all 0.3s ease;
   box-sizing: border-box;
@@ -281,16 +270,57 @@ p {
 .contactForm input:focus {
   border: 1px solid #6581AC;
   padding: 8px;
-  border-radius: 4px;
   background: #F1F1F1;
 }
 
-.textBox {
+.contactForm input[type="submit"] {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 10px 20px;
+  width: 15vw;
+  height: 7.5vh;
+  background-color: #6581AC;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: BambooGothic, sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+.contactForm input[type="submit"]:hover {
+  background-color: #4A5F89;
+}
+
+.contactTextBox {
+  display: flex;
   color: #6581AC;
   font-size: clamp(2rem, 1.8881rem + 0.3824vw, 2.5rem);
   font-family: BambooGothic, sans-serif;
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: left;
+  position: absolute;
+  bottom: 5vh;
+  width: 80%;
 }
 
+.footerContainer {
+  display: flex;
+  background-color: #6581AC;
+  min-height: 20vh;
+  padding: 10vh 7.5vw 0 10vw;
+  justify-content: space-between;
+}
+
+.footerP {
+  font-size: clamp(0.8rem, 0.6881rem + 0.3824vw, 1.3rem);
+  color: white;
+  font-family: 'BambooGothic', sans-serif;
+  padding: 0;
+}
+
+#icon {
+  min-width: 5vw;
+  height: auto;
+}
