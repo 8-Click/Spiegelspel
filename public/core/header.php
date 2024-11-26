@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="<?= BASEURL_PUBLIC?>assets/css/header.css">
     <link rel="stylesheet" href="<?= BASEURL_PUBLIC?>assets/css/footer.css">
     <link rel="stylesheet" href="<?= BASEURL_PUBLIC?>assets/css/index.css">
+    <script src="<?= BASEURL_PUBLIC?>assets/js/header.js"></script>
 </head>
 
 <body>

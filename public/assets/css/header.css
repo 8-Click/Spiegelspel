@@ -6,12 +6,19 @@
 
 
 .headerContainer {
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Take up full width */
+    z-index: 1000; /* Keep it on top */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10vw;
     background: white;
+    transition: transform 0.1s ease-in-out; /* Smooth transition for hiding and showing */
 }
+
 
 .navLinks {
     display: flex;
