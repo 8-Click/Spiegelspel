@@ -21,6 +21,7 @@
     font-size: clamp(0.8rem, 0.6881rem + 0.3824vw, 1.3rem);
     color: white;
     font-family: 'BambooGothic', sans-serif;
+    padding: 0;
 }
 
 #icon {
