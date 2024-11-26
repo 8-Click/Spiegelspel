@@ -15,7 +15,9 @@ include_once("core/header.php");?>
             <input class="inputBox" type="email" id="email" name="email">
             <label for="question">Vraag</label>
             <input class="inputBox" type="text" id="question" name="question">
-            <input type="submit" value="Verzend">
+            <input type="submit" value="VERZEND">
         </form>
     </div>
 </div>
+<?php 
+include_once("core/footer.php");?>

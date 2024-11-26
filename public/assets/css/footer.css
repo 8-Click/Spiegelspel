@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Bodoni MT';
+    src: url('../fonts/Font/bodoni-mt-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BambooGothic';
+    src: url('../fonts/Font/bamboo-gothic/bamboo-gothic.ttf') format('truetype');
+}
+
+
+.footerContainer {
+    display: flex;
+    background-color: #6581AC;
+    min-height: 20vh;
+    padding: 10vh 7.5vw 0 10vw;
+    justify-content: space-between;
+}
+
+.footerP {
+    font-size: clamp(0.8rem, 0.6881rem + 0.3824vw, 1.3rem);
+    color: white;
+    font-family: 'BambooGothic', sans-serif;
+}
+
+#icon {
+    min-width: 5vw;
+    height: auto;
+}

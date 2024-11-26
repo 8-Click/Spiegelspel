@@ -2,6 +2,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
     <link rel="stylesheet" href="<?= BASEURL_PUBLIC?>assets/css/header.css">
+    <link rel="stylesheet" href="<?= BASEURL_PUBLIC?>assets/css/footer.css">
     <link rel="stylesheet" href="<?= BASEURL_PUBLIC?>assets/css/index.css">
 </head>
 
