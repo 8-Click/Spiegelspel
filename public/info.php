@@ -31,7 +31,7 @@ include_once("core/html.php");
         </div>
     </div>
     <div class="instructionContainer">
-        <h2>HET SPIEGELSPEL</h2>
+        <h2 class="h2_info">HET SPIEGELSPEL</h2>
         <div class="initialBox">
             <div class="leftColumn">
                 <div class="paragraphImage">
