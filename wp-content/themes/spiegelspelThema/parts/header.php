@@ -12,6 +12,7 @@ $image_url = wp_get_attachment_url($logo_id[0]->ID); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    <script src="./assets/js/header.js"></script>
 </head>
 
 <body>

@@ -105,7 +105,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10vh 10vw;
-  
+  background-color: #F1F1F1;
 }
 
 .videoContainer {
