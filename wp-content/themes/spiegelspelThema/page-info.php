@@ -57,7 +57,7 @@ $info_foto3_url = wp_get_attachment_url($logo_id[0]->ID);
             </div>
             <div class="videoText">
                 <h1 class="h1_info">DOEL SPIEGELSPEL</h1>
-                <p  class="containerText">Een methodiek om spelenderwijs het teamleren te bevorderen</p>
+                <p class="containerTextMethodiek">Een methodiek om spelenderwijs het teamleren te bevorderen</p>
             </div>
         </div>
         <div class="fotoContainer">
@@ -75,12 +75,12 @@ $info_foto3_url = wp_get_attachment_url($logo_id[0]->ID);
             </div>
         </div>
     </div>
-    <div class="instructionContainer">  
-        <h2 class="h2_info">HET SPIEGELSPEL</h2>
+    <div class="instructionContainer">
+        <h2 class="titleSpiegel">HET SPIEGELSPEL</h2>
         <div class="initialBox">
             <div class="leftColumn">
                 <div class="paragraphImage">
-                    <img class="image" src="<?= $info_foto1_url ?>">
+                    <img class="image1" src="<?= $info_foto1_url ?>">
                 </div>
                 <?php
                 $args = array(
@@ -91,9 +91,9 @@ $info_foto3_url = wp_get_attachment_url($logo_id[0]->ID);
                 if ($post_text->have_posts()) {
                     $post_text->the_post();
                 ?>
-                    <p class="paragraph">
-                        <?php the_content(); ?>
-                    </p>
+
+                    <?php the_content(); ?>
+
                 <?php
                 }
                 ?>
@@ -111,9 +111,9 @@ $info_foto3_url = wp_get_attachment_url($logo_id[0]->ID);
                 if ($post_text->have_posts()) {
                     $post_text->the_post();
                 ?>
-                    <p class="paragraph">
-                        <?php the_content(); ?>
-                    </p>
+
+                    <?php the_content(); ?>
+
                 <?php
                 }
                 ?>
@@ -129,9 +129,9 @@ $info_foto3_url = wp_get_attachment_url($logo_id[0]->ID);
                 if ($post_text->have_posts()) {
                     $post_text->the_post();
                 ?>
-                    <p class="paragraph">
-                        <?php the_content(); ?>
-                    </p>
+
+                    <?php the_content(); ?>
+
                 <?php
                 }
                 ?>
@@ -141,3 +141,31 @@ $info_foto3_url = wp_get_attachment_url($logo_id[0]->ID);
 </div>
 
 <?php include "parts/footer.php" ?>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function switchImages() {
+            const infoFoto2 = document.getElementById('infoFoto2');
+            const infoFoto3 = document.getElementById('infoFoto3');
+
+            if (window.innerWidth <= 768) {
+                // Switch the src attributes
+                const tempSrc = infoFoto2.src;
+                infoFoto2.src = infoFoto3.src;
+                infoFoto3.src = tempSrc;
+            } else {
+                // Reset to original src attributes
+                infoFoto2.src = '<?= esc_url($info_foto2_url) ?>';
+                infoFoto3.src = '<?= esc_url($info_foto3_url) ?>';
+            }
+        }
+
+        // Run on load
+        switchImages();
+
+        // Run on resize
+        window.addEventListener('resize', switchImages);
+    });
+</script>
