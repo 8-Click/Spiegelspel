@@ -240,24 +240,32 @@ p {
   position: absolute;
 }
 
-.contactForm form {
+.wpcf7 {
+  width: 100%;
+  height: 100%;
+}
+
+.wpcf7-form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 100%;
-  align-items: center;
+  height: 100%;
+  padding: 5vh 0;
 }
 
-.contactForm label {
+.wpcf7-form label {
   margin-top: 5vh;
-  width: 80%; 
+  width: 80%;
   text-align: left;
   font-family: BambooGothic, sans-serif;
+  margin-left: 10%;
 }
 
-.contactForm input {
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
   border: none;
-  width: 80%; 
+  width: 80%;
   border-bottom: 2px solid #6581AC;
   background: transparent;
   outline: none;
@@ -265,15 +273,18 @@ p {
   font-family: BambooGothic, sans-serif;
   transition: all 0.3s ease;
   box-sizing: border-box;
+  margin-left: 10%;
 }
 
-.contactForm input:focus {
+.wpcf7-form input[type="text"]:focus,
+.wpcf7-form input[type="email"]:focus,
+.wpcf7-form textarea:focus {
   border: 1px solid #6581AC;
   padding: 8px;
   background: #F1F1F1;
 }
 
-.contactForm input[type="submit"] {
+.wpcf7-form input[type="submit"] {
   margin-top: 20px;
   margin-bottom: 0;
   padding: 10px 20px;
@@ -287,9 +298,10 @@ p {
   font-size: 1rem;
   transition: background-color 0.3s ease;
   align-self: flex-end;
+  margin-right: 10%;
 }
 
-.contactForm input[type="submit"]:hover {
+.wpcf7-form input[type="submit"]:hover {
   background-color: #4A5F89;
 }
 
@@ -323,4 +335,89 @@ p {
 #icon {
   min-width: 5vw;
   height: auto;
+}
+
+/* Contact Form 7 specific styles to match your design */
+.wpcf7-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+}
+
+.wpcf7-form label {
+  margin-top: 5vh;
+  width: 80%; 
+  text-align: left;
+  font-family: BambooGothic, sans-serif;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+  border: none;
+  width: 80%; 
+  border-bottom: 2px solid #6581AC;
+  background: transparent;
+  outline: none;
+  margin-bottom: 15px;
+  font-family: BambooGothic, sans-serif;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.wpcf7-form input[type="text"]:focus,
+.wpcf7-form input[type="email"]:focus,
+.wpcf7-form textarea:focus {
+  border: 1px solid #6581AC;
+  padding: 8px;
+  background: #F1F1F1;
+}
+
+.wpcf7-submit {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 10px 20px;
+  width: 15vw;
+  height: 7.5vh;
+  background-color: #6581AC;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: BambooGothic, sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+.wpcf7-submit:hover {
+  background-color: #4A5F89;
+}
+
+/* Fix for form alignment inside contactForm div */
+.contactForm .wpcf7 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Error and success message styling */
+.wpcf7-response-output {
+  width: 80%;
+  margin: 2em auto !important;
+  padding: 0.5em !important;
+  text-align: center;
+  font-family: BambooGothic, sans-serif;
+}
+
+.wpcf7-not-valid-tip {
+  font-family: BambooGothic, sans-serif;
+  font-size: 0.8em;
+  color: #dc3232;
+  margin-top: 0.5em;
+}
+
+.wpcf7-response-output {
+  display: none !important;
 }
