@@ -14,13 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentScroll > lastScrollTop && currentScroll > headerHeight) {
             if (isHeaderVisible) {
                 header.style.transform = 'translateY(-100%)'; // Hide header
+                header.style.opacity = '0';
                 isHeaderVisible = false;
             }
         } 
         // Check if we're scrolling up and show the header
         else if (currentScroll < lastScrollTop) {
             if (!isHeaderVisible) {
-                header.style.transform = 'translateY(0)'; // Show header
+                header.style.transform = 'translateY(0)'; // Show header\
+                header.style.opacity = '1';
                 isHeaderVisible = true;
             }
         }
