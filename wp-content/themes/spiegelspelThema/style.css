@@ -7,20 +7,6 @@ Description: Een zelfgemaakt WordPress thema voor het Spiegelspel.
 Version: 1.0
 */
 
-@media(max-width: 768px){
-
-.headerContainer{
-
-}
-
-.h1_index{
-  font-size: 3rem;
-}
-
-
-
-}
-
 @font-face {
   font-family: "Bodoni MT";
   src: url("fonts/Font/bodoni-mt-regular.ttf") format("truetype");
@@ -29,15 +15,15 @@ Version: 1.0
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding-top:9vh;
+  padding-top: 9vh;
 }
 
 .headerContainer {
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
-  width: 79vw;
-  z-index: 1000; 
+  width: 80%;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,7 +45,7 @@ a:-webkit-any-link {
 .nav-link {
   text-decoration: none;
   margin: 10px;
-  color: #2D54A0;
+  color: #2d54a0;
   font-weight: bold;
   font-size: clamp(1rem, 0.8881rem + 0.3824vw, 1.5rem);
 }
@@ -70,7 +56,7 @@ a:-webkit-any-link {
   padding-top: 1vw;
   transition: all 0.3s ease-in-out;
   padding-bottom: 1vw;
-  width:7vw ;
+  width: 7vw;
   text-align: center;
 }
 
@@ -80,12 +66,11 @@ a:-webkit-any-link {
   inset: 0;
   border-bottom: 2px solid transparent;
   transition: all 0.2s ease-in-out;
-  
 }
 
 .nav-link-wrapper:hover::before {
   border-bottom-width: 4px;
-  border-color: #E51A54;
+  border-color: #e51a54;
 }
 
 .navLinks li {
@@ -124,7 +109,7 @@ a:-webkit-any-link {
 
 .h1_index {
   font-family: "Bodoni MT", sans-serif;
-  font-size: 6rem;
+  font-size: 6vw;
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-inline-start: 0px;
@@ -134,7 +119,7 @@ a:-webkit-any-link {
 
 .h2_index {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 3rem;
+  font-size: 4vw;
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-inline-start: 0px;
@@ -385,4 +370,58 @@ a:-webkit-any-link {
 #icon {
   min-width: 4vw;
   height: auto;
+}
+
+@media (max-width: 768px) {
+
+  body{
+    padding-top: 8.5vh;
+    background-color: black;
+  }
+
+  .h1_index {
+    font-size: 10vw;
+  }
+
+  .videoContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .fotoContainer {
+    overflow-x: auto;
+  }
+
+  .initialBox {
+    flex-direction: column;
+    justify-content: right;
+    width: 75vw;
+
+  }
+
+  .paragraph {
+    font-size: clamp(1rem, 0.8329rem + 0.2294vw, 1.2rem);
+    overflow-y: auto;
+    height: 35vh;
+    width: 70vw;
+    text-align: center;
+  }
+
+  .image1 {
+    margin-bottom: 0;
+    width: 70vw;
+
+  }
+
+  .image{
+    width: 70vw ;
+  }
+
+  .titleSpiegel{
+    margin: 10vh auto 5vh auto;
+  }
+
+  .infoContainer{
+    padding: 5vw 5vw;
+  }
 }

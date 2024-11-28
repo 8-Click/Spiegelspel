@@ -7,7 +7,8 @@ $linkd_id = get_posts($args);
 $linkd_url = wp_get_attachment_url($linkd_id[0]->ID);
 ?>
 
-
+    
+</body>
 <footer>
     <div class="footerContainer">
         <div class="socialText">
@@ -21,6 +22,6 @@ $linkd_url = wp_get_attachment_url($linkd_id[0]->ID);
         </div>
     </div>
 </footer>
-</body>
+
 
 </html>
