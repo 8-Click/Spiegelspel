@@ -7,6 +7,20 @@ Description: Een zelfgemaakt WordPress thema voor het Spiegelspel.
 Version: 1.0
 */
 
+@media(max-width: 768px){
+
+.headerContainer{
+
+}
+
+.h1_index{
+  font-size: 3rem;
+}
+
+
+
+}
+
 @font-face {
   font-family: "Bodoni MT";
   src: url("fonts/Font/bodoni-mt-regular.ttf") format("truetype");
@@ -85,7 +99,7 @@ a:-webkit-any-link {
 
 .homeContainer {
   width: 100%;
-  min-height: 110vh;
+  min-height: 55vw;
   position: relative;
   overflow: hidden;
   display: flex;
