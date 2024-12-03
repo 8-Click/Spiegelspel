@@ -22,10 +22,14 @@ $image_url = wp_get_attachment_url($logo_id[0]->ID); ?>
 
 <header class="headerContainer">
     <a class="logoContainer" href="<?= home_url() ?>">
-
         <img src="<?= esc_url($image_url) ?>">
     </a>
-    <nav class="navLinks">
+    <button id="menuToggle" class="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="navLinks" id="navMenu">
         <?php
         wp_nav_menu(array(
             'theme_location' => 'hoofdmenu',
@@ -36,8 +40,7 @@ $image_url = wp_get_attachment_url($logo_id[0]->ID); ?>
         ));
         ?>
     </nav>
-
-
 </header>
+
 
 <body>
