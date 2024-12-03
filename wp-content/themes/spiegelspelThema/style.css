@@ -258,9 +258,6 @@ a:-webkit-any-link {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-
-/* Alle contactformcss begin hier, moet nog afgewerkt worden zodat dit er beter uitziet dan wat het nu is. */
-
 .contactHomeContainer {
   display: flex;
   flex-direction: row;
@@ -271,9 +268,9 @@ a:-webkit-any-link {
 }
 
 .contactForm {
-  margin: 25vh 0 0 15vw;
-  width: 40vw;
-  height: 90vh;
+  margin: 10vh 0 0 15vw;
+  width: 45vw;
+  height: 114vh;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -283,17 +280,15 @@ a:-webkit-any-link {
   position: absolute;
 }
 
-.wpcf7 {
-  width: 100%;
-  height: 100%;
-}
-
 .wpcf7-form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
   padding: 5vh 0;
+}
+
+.wpcf7 {
+  height: 100%;
 }
 
 .wpcf7-form label {
@@ -312,40 +307,46 @@ a:-webkit-any-link {
   border-bottom: 2px solid #6581ac;
   background: transparent;
   outline: none;
-  margin-bottom: 15px;
+  margin-bottom: 5vh;
   font-family: "Franklin Gothic", Arial, sans-serif;
   transition: all 0.3s ease;
   box-sizing: border-box;
-  margin-left: 10%;
+  height: 5vh;
+  width: 100%;
 }
 
 .wpcf7-form input[type="text"]:focus,
 .wpcf7-form input[type="email"]:focus,
 .wpcf7-form textarea:focus {
-  border: 1px solid #6581AC;
+  border: 1px solid #6581ac;
   padding: 8px;
   background: #f1f1f1;
+}
+
+.wpcf7-form p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wpcf7-form input[type="submit"] {
   margin-top: 20px;
   margin-bottom: 0;
-  padding: 10px 20px;
+  text-align: center;
   width: 15vw;
   height: 7.5vh;
   background-color: #6581ac;
   color: white;
   border: none;
   cursor: pointer;
-  font-family: "Franklin Gothic", Arial, sans-serif;
-  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
   transition: background-color 0.3s ease;
   align-self: flex-end;
-  margin-right: 10%;
 }
 
 .wpcf7-form input[type="submit"]:hover {
-  background-color: #4A5F89;
+  background-color: #4a5f89;
 }
 
 .contactTextBox {
@@ -387,31 +388,22 @@ a:-webkit-any-link {
   height: auto;
 }
 
-
-
-
-
-
-
-
-/* Fix for form alignment inside contactForm div */
 .contactForm .wpcf7 {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-/* Error and success message styling */
 .wpcf7-response-output {
   width: 80%;
   margin: 2em auto !important;
   padding: 0.5em !important;
   text-align: center;
-  font-family: BambooGothic, sans-serif;
+  font-family: "Franklin Gothic ", Arial, sans-serif;
 }
 
 .wpcf7-not-valid-tip {
-  font-family: BambooGothic, sans-serif;
+  font-family: "Franklin Gothic ", Arial, sans-serif;
   font-size: 0.8em;
   color: #dc3232;
   margin-top: 0.5em;
@@ -421,11 +413,29 @@ a:-webkit-any-link {
   display: none !important;
 }
 
-@media (max-width: 768px) {
+.home {
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
 
-  body{
-    padding-top: 8.5vh;
-    background-color: black;
+.Nijlant_img {
+  width: 40vw;
+}
+
+.info_Nijlant {
+  display: flex;
+  flex-direction: row;
+  padding: 5vw;
+  justify-content: space-between;
+}
+
+.text_info {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 15vw;
   }
 
   .h1_index {
@@ -445,7 +455,6 @@ a:-webkit-any-link {
     flex-direction: column;
     justify-content: right;
     width: 75vw;
-
   }
 
   .paragraph {
@@ -459,18 +468,81 @@ a:-webkit-any-link {
   .image1 {
     margin-bottom: 0;
     width: 70vw;
-
   }
 
-  .image{
-    width: 70vw ;
+  .image {
+    width: 70vw;
   }
 
-  .titleSpiegel{
+  .titleSpiegel {
     margin: 10vh auto 5vh auto;
   }
 
-  .infoContainer{
+  .infoContainer {
     padding: 5vw 5vw;
+  }
+
+  .contactForm {
+    margin: 1vh 0;
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    position: relative;
+  }
+
+  .contactHomeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wpcf7-form input[type="text"],
+  .wpcf7-form input[type="email"],
+  .wpcf7-form textarea {
+    margin-bottom: 0;
+  }
+
+  .wpcf7-form input[type="submit"] {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 32vw;
+    height: 6vh;
+    font-size: 1rem;
+  }
+
+  .contactTextBox {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wpcf7-form label {
+    margin-top: 0;
+  }
+
+  .wpcf7-form {
+    gap: 5vh;
+  }
+
+  .info_Nijlant{
+    flex-direction: column;
+    justify-content: none;
+    gap: 3vh;
+  }
+
+  .Nijlant_img{
+    width: 100%;
+  }
+
+  .text_info .paragraph{
+   height: auto;
+   width: auto;
+  }
+
+  .text_info{
+    height: 35vh;
+    width: 100%;
+    overflow-y:auto ;
   }
 }
