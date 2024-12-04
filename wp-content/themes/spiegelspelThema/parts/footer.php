@@ -16,6 +16,8 @@ if ($post) {
     $mail_url = get_post_meta($post_id, '_email_url', true);
 } else {
     $linkd_link = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
+    $mail_url = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
+    $website_link = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
 }
 
 ?>
@@ -27,8 +29,8 @@ if ($post) {
         <div class="socialText">
             <p class="footerP"><strong>Naam contactpersoon:</strong>&nbsp;A.Nijlant</p>
             <p class="footerP"><strong>Bedrijfsnaam:</strong>&nbsp;Focus6</p>
-            <p class="footerP"><strong>Website:</strong>&nbsp;<a href="<?= esc_url($website_link)?>"><?= esc_url($website_link)?></a></p>
-            <p class="footerP"><strong>E-mail:</strong>&nbsp;<a href="mailto:<?= esc_attr($mail_url) ?>"><?= esc_url($mail_url) ?></a></p>
+            <p class="footerP"><strong>Website:</strong>&nbsp;<a class="footerText" href="<?= esc_url($website_link)?>">focus6.nl</a></p>
+            <p class="footerP"><strong>E-mail:</strong>&nbsp;<a class="footerText" href="mailto:<?= esc_attr($mail_url) ?>"><?=$mail_url ?></a></p>
         </div>
         <a href="<?= esc_url($linkd_link)?>" class="linkedInIcon">
             <img id="icon" src="<?= $linkd_url ?>">

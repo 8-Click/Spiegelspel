@@ -496,6 +496,16 @@ a:-webkit-any-link {
   padding: 1rem; /* Add space between links */
 }
 
+.footerText{
+  color: white;
+  opacity: 0.9;
+  transition: opacity 0.3 ease-in-out ;
+}
+
+.footerText:hover{
+opacity: 1;
+}
+
 @media (max-width: 1024px) {
   .hamburgerMenu {
     display: flex;
@@ -533,6 +543,10 @@ a:-webkit-any-link {
 .logoContainer{
   width: 55vw;
   align-self: center;
+}
+
+.nav-link-wrapper:hover::before {
+  border-color: #ffffff;
 }
 }
 
