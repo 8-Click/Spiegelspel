@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Check if we're scrolling up and show the header
         else if (currentScroll < lastScrollTop) {
             if (!isHeaderVisible) {
-                header.style.transform = 'translateY(0)'; // Show header\
+                header.style.transform = 'translateY(0)'; // Show header
                 header.style.opacity = '1';
                 isHeaderVisible = true;
             }
@@ -29,5 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Update the last scroll position for comparison
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+
+    // Add the toggle functionality for the hamburger menu
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
     });
 });
