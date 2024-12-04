@@ -22,6 +22,13 @@ $foto2_url = wp_get_attachment_url($logo_id[0]->ID);
 
 $args = array(
     'post_type' => 'attachment',
+    'title' => 'foto3'
+);
+$logo_id = get_posts($args);
+$foto3_url = wp_get_attachment_url($logo_id[0]->ID);
+
+$args = array(
+    'post_type' => 'attachment',
     'title' => 'infofoto1'
 );
 $logo_id = get_posts($args);
@@ -52,7 +59,9 @@ $info_foto3_url = wp_get_attachment_url($logo_id[0]->ID);
     <div class="infoContainer">
         <div class="videoContainer">
             <div class="video">
-                <img id="videoImage" src="<?= $video_url ?>">
+                <video id="videoImage" controls>
+                    <source  src="<?= $video_url ?>" type="video/mp4">
+                </video>
                 <p class="containerText">Meerwaarde</p>
             </div>
             <div class="videoText">
@@ -70,7 +79,7 @@ $info_foto3_url = wp_get_attachment_url($logo_id[0]->ID);
                 <p class="containerText">Samenwerken</p>
             </div>
             <div class="fotoBox">
-                <img class="foto" src="<?= $foto2_url ?>">
+                <img class="foto" src="<?= $foto3_url ?>">
                 <p class="containerText">Teamontwikkeling</p>
             </div>
         </div>

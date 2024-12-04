@@ -137,6 +137,7 @@ a:-webkit-any-link {
   flex-direction: column;
   padding: 10vh 10vw;
   background-color: #f1f1f1;
+  align-items: center;
 }
 
 .videoContainer {
@@ -189,10 +190,12 @@ a:-webkit-any-link {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#videoImage,
-.foto,
-.image {
-  width: 100%;
+#videoImage{
+  width: 40vw;
+}
+
+.foto {
+  width: 28vw;
   height: auto;
 }
 
@@ -431,6 +434,7 @@ a:-webkit-any-link {
 
 .text_info {
   width: 50%;
+  align-self: center;
 }
 
 @media (max-width: 768px) {
@@ -480,6 +484,7 @@ a:-webkit-any-link {
 
   .infoContainer {
     padding: 5vw 5vw;
+    align-items: normal;
   }
 
   .contactForm {
@@ -545,5 +550,16 @@ a:-webkit-any-link {
     width: 100%;
     overflow-y:auto ;
   }
+
+  #videoImage{
+    width: 90vw;
+  }
+
+  .foto
+ {
+  width: 100%;
+  height: auto;
+}
+  
 }
 
