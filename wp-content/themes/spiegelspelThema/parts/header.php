@@ -6,7 +6,9 @@ $args = array(
 $logo_id = get_posts($args);
 $image_url = wp_get_attachment_url($logo_id[0]->ID); ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes();
+
+?>>
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
