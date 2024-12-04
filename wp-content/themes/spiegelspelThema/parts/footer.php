@@ -12,6 +12,8 @@ $post = get_page_by_title('Footer', OBJECT, 'post');
 if ($post) {
     $post_id = $post->ID;
     $linkd_link = get_post_meta($post_id, '_linkedin_url', true);
+    $website_link = get_post_meta($post_id, '_website_url', true);
+    $mail_url = get_post_meta($post_id, '_email_url', true);
 } else {
     $linkd_link = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
 }
@@ -25,8 +27,8 @@ if ($post) {
         <div class="socialText">
             <p class="footerP"><strong>Naam contactpersoon:</strong>&nbsp;A.Nijlant</p>
             <p class="footerP"><strong>Bedrijfsnaam:</strong>&nbsp;Focus6</p>
-            <p class="footerP"><strong>Website:</strong>&nbsp;www.focus6.nl</p>
-            <p class="footerP"><strong>E-mail:</strong>&nbsp;a.nijlant@focus6.nl</p>
+            <p class="footerP"><strong>Website:</strong>&nbsp;<a href="<?= esc_url($website_link)?>"><?= esc_url($website_link)?></a></p>
+            <p class="footerP"><strong>E-mail:</strong>&nbsp;<a href="mailto:<?= esc_attr($mail_url) ?>"><?= esc_url($mail_url) ?></a></p>
         </div>
         <a href="<?= esc_url($linkd_link)?>" class="linkedInIcon">
             <img id="icon" src="<?= $linkd_url ?>">
