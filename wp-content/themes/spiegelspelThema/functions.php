@@ -27,3 +27,38 @@ function add_class_to_content_paragraphs($content) {
     return $content;
 }
 add_filter('the_content', 'add_class_to_content_paragraphs');
+
+function add_linkedin_meta_box() {
+    add_meta_box(
+        'linkedin_meta_box', // ID of the meta box
+        'LinkedIn URL', // Title of the meta box
+        'display_linkedin_meta_box', // Callback function to display the meta box
+        'post', // Post type where the meta box should appear
+        'normal', // Context where the meta box should appear
+        'high' // Priority of the meta box
+    );
+}
+add_action('add_meta_boxes', 'add_linkedin_meta_box');
+
+function display_linkedin_meta_box($post) {
+    // Retrieve the current value of the custom field
+    $linkedin_url = get_post_meta($post->ID, '_linkedin_url', true);
+    ?>
+    <label for="linkedin_url">LinkedIn URL:</label>
+    <input type="text" name="linkedin_url" id="linkedin_url" value="<?php echo esc_attr($linkedin_url); ?>" size="25" />
+    <?php
+}
+
+function save_linkedin_meta_box($post_id) {
+    // Check if the current user has permission to edit the post
+    if (!current_user_can('edit_post', $post_id)) {
+        return;
+    }
+
+    // Check if the custom field value is set
+    if (isset($_POST['linkedin_url'])) {
+        // Save the custom field value
+        update_post_meta($post_id, '_linkedin_url', sanitize_text_field($_POST['linkedin_url']));
+    }
+}
+add_action('save_post', 'save_linkedin_meta_box');

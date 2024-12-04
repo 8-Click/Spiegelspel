@@ -6,8 +6,15 @@ $args = array(
 $linkd_id = get_posts($args);
 $linkd_url = wp_get_attachment_url($linkd_id[0]->ID);
 
-$linkd_link = get_field("link_linkd");
-var_dump($linkd_link)
+$post = get_page_by_title('Footer', OBJECT, 'post');
+
+
+if ($post) {
+    $post_id = $post->ID;
+    $linkd_link = get_post_meta($post_id, '_linkedin_url', true);
+} else {
+    $linkd_link = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
+}
 
 ?>
 
