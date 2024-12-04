@@ -15,7 +15,18 @@ Version: 1.0
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding-top: 9vh;
+  padding-top: 10vh;
+}
+
+ul {
+  display: block;
+    list-style-type: disc;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    unicode-bidi: isolate;
 }
 
 .headerContainer {
@@ -84,11 +95,11 @@ a:-webkit-any-link {
 
 .homeContainer {
   width: 100%;
-  min-height: 55vw;
+  min-height: 54vw;
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+ 
   align-items: center;
 }
 
@@ -98,11 +109,6 @@ a:-webkit-any-link {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to right, #6581ac, rgba(255, 255, 255, 0)),
-    url("assets/img/bg_home.png");
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
   align-items: center;
   display: flex;
 }
@@ -130,6 +136,7 @@ a:-webkit-any-link {
 
 .textBox {
   margin-left: 20vw;
+  z-index: 1;
 }
 
 .infoContainer {
@@ -137,6 +144,7 @@ a:-webkit-any-link {
   flex-direction: column;
   padding: 10vh 10vw;
   background-color: #f1f1f1;
+  align-items: center;
 }
 
 .videoContainer {
@@ -189,10 +197,12 @@ a:-webkit-any-link {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#videoImage,
-.foto,
-.image {
-  width: 100%;
+#videoImage{
+  width: 40vw;
+}
+
+.foto {
+  width: 28vw;
   height: auto;
 }
 
@@ -431,6 +441,113 @@ a:-webkit-any-link {
 
 .text_info {
   width: 50%;
+  align-self: center;
+}
+
+
+  
+
+
+.hamburgerMenu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburgerMenu span {
+  width: 2rem;
+  height: 0.25rem;
+  background: #2d54a0;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  transition: transform 0.3s ease-in-out;
+  justify-content: flex-end;
+}
+
+.navLinks.active {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  position: absolute;
+  top: 9vh;
+  right: 0;
+  width: 10%;
+  background: white;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 1rem 1rem 1rem 0; /* Add padding to space out the links */
+}
+
+.navLinks li {
+  list-style: none;
+  text-align: right; /* Align nav links to the right */
+  padding: 1rem; /* Add space between links */
+}
+
+.footerText{
+  color: white;
+  opacity: 0.9;
+  transition: opacity 0.3 ease-in-out ;
+}
+
+.footerText:hover{
+opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .hamburgerMenu {
+    display: flex;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .navLinks.active {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    position: absolute;
+    top: 9vh;
+    right: 0;
+    width: 20%;
+    background: white;
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .navLinks li {
+    text-align: right; /* Align text to the right in mobile view */
+  }
+
+  .menu {
+    flex-direction: column; /* Stack the menu items */
+  }
+
+  .headerContainer{
+    height: 9vh;
+  }
+
+.logoContainer{
+  width: 55vw;
+  align-self: center;
+}
+
+.nav-link-wrapper:hover::before {
+  border-color: #ffffff;
+}
 }
 
 @media (max-width: 768px) {
@@ -480,6 +597,7 @@ a:-webkit-any-link {
 
   .infoContainer {
     padding: 5vw 5vw;
+    align-items: normal;
   }
 
   .contactForm {
@@ -525,25 +643,35 @@ a:-webkit-any-link {
     gap: 5vh;
   }
 
-  .info_Nijlant{
+  .info_Nijlant {
     flex-direction: column;
     justify-content: none;
     gap: 3vh;
   }
 
-  .Nijlant_img{
+  .Nijlant_img {
     width: 100%;
   }
 
-  .text_info .paragraph{
-   height: auto;
-   width: auto;
+  .text_info .paragraph {
+    height: auto;
+    width: auto;
   }
 
-  .text_info{
+  .text_info {
     height: 35vh;
     width: 100%;
-    overflow-y:auto ;
+    overflow-y: auto;
   }
+
+  #videoImage{
+    width: 90vw;
+  }
+
+  .foto
+ {
+  width: 100%;
+  height: auto;
 }
 
+}
