@@ -5,6 +5,9 @@ $args = array(
 );
 $linkd_id = get_posts($args);
 $linkd_url = wp_get_attachment_url($linkd_id[0]->ID);
+if (empty($linkd_url)) {
+    $linkd_url='https://cdn.pixabay.com/photo/2016/09/14/20/50/tooth-1670434_640.png';
+}
 
 $post = get_page_by_title('Footer', OBJECT, 'post');
 

@@ -90,7 +90,8 @@ a:-webkit-any-link {
 
 .logoContainer img {
   max-width: 90%;
-  height: auto;
+  height: 15vh;
+
 }
 
 .homeContainer {
@@ -274,7 +275,7 @@ a:-webkit-any-link {
   flex-direction: row;
   background-color: #f1f1f1;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 115vh;
   position: relative;
 }
 
@@ -395,7 +396,7 @@ a:-webkit-any-link {
 }
 
 #icon {
-  min-width: 4vw;
+  width:4vw;
   height: auto;
 }
 
@@ -485,6 +486,10 @@ a:-webkit-any-link {
 opacity: 1;
 }
 
+.wpcf7-form label {
+  font-size: 1.1rem;
+}
+
 @media (max-width: 1024px) {
   .hamburgerMenu {
     display: flex;
@@ -528,6 +533,7 @@ opacity: 1;
 .logoContainer{
   width: 55vw;
   align-self: center;
+  
 }
 
 .nav-link-wrapper:hover::before {
@@ -536,6 +542,11 @@ opacity: 1;
 }
 
 @media (max-width: 768px) {
+
+#icon{
+  width: 14vw;
+}
+
   body {
     padding-top: 15vw;
   }
@@ -639,6 +650,7 @@ opacity: 1;
 
   .wpcf7-form label {
     margin-top: 0;
+    font-size: 1rem;
   }
 
   .wpcf7-form {
@@ -674,4 +686,20 @@ opacity: 1;
   height: auto;
 }
 
+.logoContainer img {
+  max-width: 90%;
+  height: 9vh;
+
+}
+
+.logoContainer img {
+  max-width: 90%;
+  height: 9vh;
+
+}
+
+}
+
+.screen-reader-response {
+  display: none;
 }
