@@ -274,7 +274,7 @@ a:-webkit-any-link {
   flex-direction: row;
   background-color: #f1f1f1;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 115vh;
   position: relative;
 }
 
