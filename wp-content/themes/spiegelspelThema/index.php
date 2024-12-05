@@ -21,11 +21,12 @@ $bg_image_url = wp_get_attachment_url($bg_image_id[0]->ID);
     .backgroundImage {
         background-image: linear-gradient(to right, #6581ac, rgba(255, 255, 255, 0)),
             url("<?= $bg_image_url ?>");
-        background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
         position: absolute;
     }
+
+    
 </style>
 
 <div class="home">
