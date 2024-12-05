@@ -90,7 +90,8 @@ a:-webkit-any-link {
 
 .logoContainer img {
   max-width: 90%;
-  height: auto;
+  height: 15vh;
+
 }
 
 .homeContainer {
@@ -532,6 +533,7 @@ opacity: 1;
 .logoContainer{
   width: 55vw;
   align-self: center;
+  
 }
 
 .nav-link-wrapper:hover::before {
@@ -682,6 +684,12 @@ opacity: 1;
  {
   width: 100%;
   height: auto;
+}
+
+.logoContainer img {
+  max-width: 90%;
+  height: 9vh;
+
 }
 
 }
