@@ -29,10 +29,10 @@ if ($post) {
         <div class="socialText">
             <p class="footerP"><strong>Naam contactpersoon:</strong>&nbsp;A.Nijlant</p>
             <p class="footerP"><strong>Bedrijfsnaam:</strong>&nbsp;Focus6</p>
-            <p class="footerP"><strong>Website:</strong>&nbsp;<a class="footerText" href="<?= esc_url($website_link)?>">focus6.nl</a></p>
-            <p class="footerP"><strong>E-mail:</strong>&nbsp;<a class="footerText" href="mailto:<?= esc_attr($mail_url) ?>"><?=$mail_url ?></a></p>
+            <p class="footerP"><strong>Website:</strong>&nbsp;<a class="footerText" href="<?= esc_url($website_link)?>" targer="_blanc">focus6.nl</a></p>
+            <p class="footerP"><strong>E-mail:</strong>&nbsp;<a class="footerText" href="mailto:<?= esc_attr($mail_url) ?>" target="_blanc"><?=$mail_url ?></a></p>
         </div>
-        <a href="<?= esc_url($linkd_link)?>" class="linkedInIcon">
+        <a href="<?= esc_url($linkd_link)?>" class="linkedInIcon" target="_blanc">
             <img id="icon" src="<?= $linkd_url ?>">
         </a>
     </div>
