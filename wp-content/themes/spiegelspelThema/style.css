@@ -485,6 +485,10 @@ a:-webkit-any-link {
 opacity: 1;
 }
 
+.wpcf7-form label {
+  font-size: 1.1rem;
+}
+
 @media (max-width: 1024px) {
   .hamburgerMenu {
     display: flex;
@@ -644,6 +648,7 @@ opacity: 1;
 
   .wpcf7-form label {
     margin-top: 0;
+    font-size: 1rem;
   }
 
   .wpcf7-form {
