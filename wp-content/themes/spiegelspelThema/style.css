@@ -692,4 +692,18 @@ opacity: 1;
 
 }
 
+.logoContainer img {
+  max-width: 90%;
+  height: 9vh;
+
+}
+
+}
+
+.screen-reader-response {
+  display: none;
+}
+
+.screen-reader-response {
+  display: none;
 }
