@@ -59,7 +59,7 @@ $info_foto3_url = wp_get_attachment_url($logo_id[0]->ID);
     <div class="infoContainer">
         <div class="videoContainer">
             <div class="video">
-                <video id="videoImage" controls>
+                <video id="videoImage" controls autoplay>
                     <source  src="<?= $video_url ?>" type="video/mp4">
                 </video>
                 <p class="containerText">Meerwaarde</p>

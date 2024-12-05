@@ -111,6 +111,7 @@ a:-webkit-any-link {
   left: 0;
   align-items: center;
   display: flex;
+  background-size: 100% 100% ;
 }
 
 .h1_index {
@@ -444,10 +445,6 @@ a:-webkit-any-link {
   align-self: center;
 }
 
-
-  
-
-
 .hamburgerMenu {
   display: none;
   flex-direction: column;
@@ -468,27 +465,9 @@ a:-webkit-any-link {
   transition: all 0.3s linear;
 }
 
-.navLinks {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-  transition: transform 0.3s ease-in-out;
-  justify-content: flex-end;
-}
 
-.navLinks.active {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  position: absolute;
-  top: 9vh;
-  right: 0;
-  width: 10%;
-  background: white;
-  transform: translateY(0);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  padding: 1rem 1rem 1rem 0; /* Add padding to space out the links */
-}
+
+
 
 .navLinks li {
   list-style: none;
@@ -513,27 +492,33 @@ opacity: 1;
 
   .navLinks {
     display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 9vh;
+    right: 0;
+    width: 35%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transform: translateX(100%); /* Hide the menu off-screen to the right */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
   }
 
   .navLinks.active {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    position: absolute;
-    top: 9vh;
-    right: 0;
-    width: 20%;
-    background: white;
-    transform: translateY(0);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    transform: translateX(0); /* Slide the menu in from the right */
+  }
+  .navLinks {
+    display: flex; /* Ensure the menu is flexbox */
   }
 
   .navLinks li {
     text-align: right; /* Align text to the right in mobile view */
+    padding: 1rem; /* Add space between links */
   }
 
   .menu {
     flex-direction: column; /* Stack the menu items */
+    gap: 0;
   }
 
   .headerContainer{
@@ -556,7 +541,16 @@ opacity: 1;
   }
 
   .h1_index {
-    font-size: 10vw;
+    font-size: 13vw;
+    
+  }
+
+  .h2_index{
+    font-size: 5vw
+  }
+
+  .textBox{
+    margin: 0 0 35vh 5vw;
   }
 
   .videoContainer {
@@ -614,6 +608,14 @@ opacity: 1;
     align-items: center;
   }
 
+  .homeContainer{
+    height: 95vh;
+  }
+  
+  .backgroundImage{
+    background-size: cover;
+  }
+
   .wpcf7-form input[type="text"],
   .wpcf7-form input[type="email"],
   .wpcf7-form textarea {
@@ -659,9 +661,7 @@ opacity: 1;
   }
 
   .text_info {
-    height: 35vh;
     width: 100%;
-    overflow-y: auto;
   }
 
   #videoImage{
