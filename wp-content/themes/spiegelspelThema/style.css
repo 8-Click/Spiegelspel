@@ -395,7 +395,7 @@ a:-webkit-any-link {
 }
 
 #icon {
-  min-width: 4vw;
+  width:4vw;
   height: auto;
 }
 
@@ -536,6 +536,11 @@ opacity: 1;
 }
 
 @media (max-width: 768px) {
+
+#icon{
+  width: 14vw;
+}
+
   body {
     padding-top: 15vw;
   }
