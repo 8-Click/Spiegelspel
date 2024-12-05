@@ -192,27 +192,27 @@ $text="Ontdek het krachtige Spiegelspel: een dynamische methode om samen als tea
 
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        function switchImages() {
-            const infoFoto2 = document.getElementById('infoFoto2');
-            const infoFoto3 = document.getElementById('infoFoto3');
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     function switchImages() {
+    //         const infoFoto2 = document.getElementById('infoFoto2');
+    //         const infoFoto3 = document.getElementById('infoFoto3');
 
-            if (window.innerWidth <= 768) {
-                // Switch the src attributes
-                const tempSrc = infoFoto2.src;
-                infoFoto2.src = infoFoto3.src;
-                infoFoto3.src = tempSrc;
-            } else {
-                // Reset to original src attributes
-                infoFoto2.src = '<?= esc_url($info_foto2_url) ?>';
-                infoFoto3.src = '<?= esc_url($info_foto3_url) ?>';
-            }
-        }
+    //         if (window.innerWidth <= 768) {
+    //             // Switch the src attributes
+    //             const tempSrc = infoFoto2.src;
+    //             infoFoto2.src = infoFoto3.src;
+    //             infoFoto3.src = tempSrc;
+    //         } else {
+    //             // Reset to original src attributes
+    //             infoFoto2.src = '<?= esc_url($info_foto2_url) ?>';
+    //             infoFoto3.src = '<?= esc_url($info_foto3_url) ?>';
+    //         }
+    //     }
 
-        // Run on load
-        switchImages();
+    //     // Run on load
+    //     switchImages();
 
-        // Run on resize
-        window.addEventListener('resize', switchImages);
-    });
+    //     // Run on resize
+    //     window.addEventListener('resize', switchImages);
+    // });
 </script>
