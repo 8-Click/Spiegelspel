@@ -569,6 +569,7 @@ opacity: 1;
 
   .fotoContainer {
     overflow-x: auto;
+    flex-direction: column;
   }
 
   .initialBox {
