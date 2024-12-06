@@ -4,7 +4,13 @@ $args = array(
     'title' => 'logo'
 );
 $logo_id = get_posts($args);
-$image_url = wp_get_attachment_url($logo_id[0]->ID); ?>
+$image_url = wp_get_attachment_url($logo_id[0]->ID);
+if (empty($image_url)) {
+    $image_url='https://cdn.pixabay.com/photo/2016/09/14/20/50/tooth-1670434_640.png';
+}
+?>
+
+
 <!DOCTYPE html>
 <html <?php language_attributes();
 
