@@ -4,9 +4,23 @@ $args = array(
     'title' => 'linkd'
 );
 $linkd_id = get_posts($args);
+
+
+
 $linkd_url = wp_get_attachment_url($linkd_id[0]->ID);
 if (empty($linkd_url)) {
     $linkd_url='https://cdn.pixabay.com/photo/2016/09/14/20/50/tooth-1670434_640.png';
+}
+
+$args = array(
+    'post_type' => 'attachment',
+    'title' => 'focus6'
+);
+$focus_id = get_posts($args);
+$focus_url = wp_get_attachment_url($focus_id[0]->ID);
+
+if (empty($focus_url)) {
+    $focus_url='https://cdn.pixabay.com/photo/2016/09/14/20/50/tooth-1670434_640.png';
 }
 
 $post = get_page_by_title('Footer', OBJECT, 'post');
@@ -38,6 +52,11 @@ if ($post) {
         <a href="<?= esc_url($linkd_link)?>" class="linkedInIcon" target="_blanc">
             <img id="icon" src="<?= $linkd_url ?>">
         </a>
+    </div>
+    <div class="copyright">
+        <a  href="<?= esc_url($website_link)?>" target="_blank">
+        <img class="focus6_img" src="<?= esc_url($focus_url) ?>" alt=""></a>
+        <h6 class="copyText">© Copyright 2025. Alle rechten voorbehouden.</h6>
     </div>
 </footer>
 
