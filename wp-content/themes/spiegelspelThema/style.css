@@ -540,7 +540,6 @@ a:-webkit-any-link {
   flex-direction: row;
   gap: 2vw;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .recensies {
@@ -554,9 +553,8 @@ a:-webkit-any-link {
 .reviews {
   display: flex;
   flex-direction: column;
-  padding: 3vw;
+  padding: 5vw;
   background-color: #819fcc;
-  /* background-color: white; */
   justify-content: center;
   align-items: center;
 }
