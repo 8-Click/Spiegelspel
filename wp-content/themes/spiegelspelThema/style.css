@@ -16,7 +16,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding-top: 6vw;
-  height: 100dvh;
 }
 
 ul {
@@ -172,7 +171,7 @@ a:-webkit-any-link {
 }
 
 .videoText p {
-  padding: 3dvh 0;
+  padding: 1vw 0;
   font-size: clamp(1.2rem, 0.8329rem + 0.2294vw, 1.2rem);
 }
 
@@ -215,7 +214,7 @@ a:-webkit-any-link {
 }
 
 .containerText {
-  padding: 3dvh 0;
+  padding: 1vw 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -239,7 +238,7 @@ a:-webkit-any-link {
 
 .h2_info {
   font-size: clamp(1.5rem, 1.2763rem + 0.7648vw, 2.5rem);
-  margin: 5dvh auto 5vw auto;
+  margin: 2.8125vw auto 5vw auto;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -260,13 +259,13 @@ a:-webkit-any-link {
 }
 
 .image1 {
-  margin-bottom: 6dvh;
+  margin-bottom: 3.375vw;
   width: 35vw;
 }
 
 .titleSpiegel {
   font-size: clamp(1.5rem, 1.2763rem + 0.7648vw, 2.5rem);
-  margin: 18dvh auto 5vw auto;
+  margin: 10.125vw auto 5vw auto;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -275,14 +274,14 @@ a:-webkit-any-link {
   flex-direction: row;
   background-color: #f1f1f1;
   justify-content: center;
-  min-height: 115dvh;
+  min-height: 64.6875vw;
   position: relative;
 }
 
 .contactForm {
   margin: 5vw 0 0 15vw;
   width: 45vw;
-  height: 114dvh;
+  height: 64.125vw;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -296,7 +295,7 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 5dvh 0;
+  padding: 2.8125vw 0;
 }
 
 .wpcf7 {
@@ -304,7 +303,7 @@ a:-webkit-any-link {
 }
 
 .wpcf7-form label {
-  margin-top: 5dvh;
+  margin-top: 2.8125vw;
   width: 80%;
   width: 80%;
   text-align: left;
@@ -319,11 +318,11 @@ a:-webkit-any-link {
   border-bottom: 2px solid #6581ac;
   background: transparent;
   outline: none;
-  margin-bottom: 5dvh;
+  margin-bottom: 2.8125vw;
   font-family: "Franklin Gothic", Arial, sans-serif;
   transition: all 0.3s ease;
   box-sizing: border-box;
-  height: 5dvh;
+  height: 2.8125vw;
   width: 100%;
 }
 
@@ -346,7 +345,7 @@ a:-webkit-any-link {
   margin-bottom: 0;
   text-align: center;
   width: 15vw;
-  height: 7.5dvh;
+  height: 4.21875vw;
   background-color: #6581ac;
   color: white;
   border: none;
@@ -369,15 +368,15 @@ a:-webkit-any-link {
   font-weight: bold;
   text-align: left;
   position: absolute;
-  bottom: 5dvh;
+  bottom: 2.8125vw;
   width: 80%;
 }
 
 .footerContainer {
   display: flex;
   background-color: #6581ac;
-  min-height: 20dvh;
-  padding: 5dvh 7.5vw 5dvh 10vw;
+  min-height: 11.25vw;
+  padding: 2.8125vw 7.5vw 2.8125vw 10vw;
   justify-content: space-between;
   align-items: center;
 }
@@ -387,7 +386,7 @@ a:-webkit-any-link {
   color: white;
   font-family: "Franklin Gothic ", Arial, sans-serif;
   display: flex;
-  margin: 1dvh;
+  margin: 0.5625vw;
 }
 
 .socialText {
@@ -426,7 +425,7 @@ a:-webkit-any-link {
 }
 
 .home {
-  min-height: 100dvh;
+  min-height: 56.25vw;
   background-color: #f1f1f1;
 }
 
@@ -575,12 +574,11 @@ a:-webkit-any-link {
     display: none;
     flex-direction: column;
     position: fixed;
-    top: 9dvh;
+    top: 15.5vw;
     right: 0;
     width: 35%;
     background: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
     transform: translateX(100%); /* Hide the menu off-screen to the right */
     transition: transform 0.3s ease-in-out; /* Smooth transition */
   }
@@ -603,7 +601,7 @@ a:-webkit-any-link {
   }
 
   .headerContainer {
-    height: 9dvh;
+    height: 16vw;
   }
 
   .logoContainer {
@@ -617,6 +615,15 @@ a:-webkit-any-link {
 }
 
 @media (max-width: 768px) {
+
+.footerContainer{
+  min-height: 15vw;
+}
+
+.socialText{
+  gap: 2vw;
+}
+
   #icon {
     width: 14vw;
   }
@@ -655,7 +662,7 @@ a:-webkit-any-link {
   }
 
   .textBox {
-    margin: 0 0 35dvh 5vw;
+    margin: 0 0 19.6875vw 5vw;
   }
 
   .videoContainer {
@@ -677,7 +684,7 @@ a:-webkit-any-link {
   .paragraph {
     font-size: clamp(1rem, 0.8329rem + 0.2294vw, 1.2rem);
     overflow-y: auto;
-    height: 35dvh;
+    height: 19.6875vw;
     width: 70vw;
     text-align: center;
   }
@@ -692,7 +699,7 @@ a:-webkit-any-link {
   }
 
   .titleSpiegel {
-    margin: 10dvh auto 5dvh auto;
+    margin: 5.625 auto 5.625vw auto;
   }
 
   .infoContainer {
@@ -701,9 +708,9 @@ a:-webkit-any-link {
   }
 
   .contactForm {
-    margin: 1dvh 0;
+    margin: 4vw 0;
     width: 80vw;
-    height: 90dvh;
+    height: 140vw;
     display: flex;
     position: relative;
   }
@@ -715,7 +722,7 @@ a:-webkit-any-link {
   }
 
   .homeContainer {
-    height: 95dvh;
+    height: 53.4375vw;
   }
 
   .backgroundImage {
@@ -732,8 +739,8 @@ a:-webkit-any-link {
     margin-top: 0;
     margin-bottom: 0;
     width: 32vw;
-    height: 6dvh;
-    font-size: 1rem;
+    height: 10vw;
+    font-size: 1.2rem;
   }
 
   .contactTextBox {
@@ -741,21 +748,25 @@ a:-webkit-any-link {
     bottom: 0;
     display: flex;
     justify-content: center;
+    padding-top: 4vw ;
   }
 
   .wpcf7-form label {
     margin-top: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
   }
 
   .wpcf7-form {
-    gap: 5dvh;
+    gap: 7vw;
   }
 
   .info_Nijlant {
     flex-direction: column;
     justify-content: none;
-    gap: 3dvh;
+    gap: 1.6875vw;
   }
 
   .Nijlant_img {
@@ -782,12 +793,7 @@ a:-webkit-any-link {
 
   .logoContainer img {
     max-width: 90%;
-    height: 9dvh;
-  }
-
-  .logoContainer img {
-    max-width: 90%;
-    height: 9dvh;
+    height: 16vw;
   }
 
   .copyright {
